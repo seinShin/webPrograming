@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>이미지 그리기 </title>
+    <meta charset="UTF-8" /> 
+  </head>
+  <body onmousedown = "start();" onmousemove = "draw();" onmouseup = "stop();">
+      <canvas id = "myCanvas"  width = "480" height = "320" style = "border: 1px solid;" > </canvas>
+      <script type = "text/javascript">
+            var canvas = document.getElementById("myCanvas");
+            var myContext = canvas.getContext("2d");
+            var drawing = false;
+          
+          function start() {
+              e = window.event;
+              myContext.moveTo(e.clientX-10, e.clientY-10 );
+              drawing = true;
+
+            }
+
+          function draw(){
+                if (drawing){
+                    e = window.event;
+                    myContext.lineTo(e.clientX -10, e.clientY-10 );
+                    myContext.lineJoin = "round";
+                    myContext.lineCap = "round";
+                    myContext.stroke();
+                  }
+              }
+           
+          function stop() { drawing = false; }
+
+          function color (color){
+            myContext.strokeStyle = color;
+            myContext.beginPath();
+
+         }
+
+         function range (range){
+            myContext.lineWidth = range;
+            myContext.beginPath();
+         }
+
+          function reset(){
+            myContext.clearRect(0,0,canvas.width,canvas.height);
+            myContext.beginPath();
+          }
+
+          function imgdata(){
+       
+            var dataURL  = canvas.toDataURL();
+			var cimg = document.getElementById("canvasimg");
+			cimg.src = dataURL;
+          
+         
+
+          }
+
+      </script>
+
+       <br>
+      펜 컬러: 
+                 <input type = "radio" id  ="black" name = "color" onclick = "color(this.value)" value = "black" checked/> 
+                 <label for = "black"  style = "color: white;background-color : black;">검정</label>
+
+                 <input type = "radio" id = "red" name = "color" onclick = "color(this.value)" value = "red" />
+                 <label for = "red"  style = "color: white;background-color : red;">빨강</label>
+
+                 <input type = "radio" id = "green"   name = "color"  onclick = "color(this.value)"  value = "green" /> 
+                 <label for = "green"  style = "color: white;background-color : green;">초록</label>
+
+                <input type = "radio" id = "blue"   name = "color" onclick = "color(this.value)"  value = "blue" /> 
+                <label for = "blue" style = "color: white;background-color : blue;"> 파랑</label>
+
+                <input type = "radio" id = "white"   name = "color"  onclick = "color(this.value)"  value = "white" /> 
+                <label for = "white"  style = "border: 1px solid black;" >흰색</label>
+              <br><br>
+      펜 굵기: <input type = "range" id = "range" value = "1" onchange = "range(this.value);" min = "1" max = "30" name = " bold" />
+      <br>
+      <br>
+      <input type = "reset" onclick = "reset();" value = "캔버스 초기화"/>
+      <input type = "button" onclick = "imgdata();" onmousedown = "imgdata();"  value = "캔버스 저장"/>
+      <br><br>
+      
+      <img id = "canvasimg" width = "120" height = "80" style = "border: 0.9px solid;"/>
+
+  </body>
+  </html>
