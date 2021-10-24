@@ -1,0 +1,110 @@
+article{
+	border : 1px solid white;
+	margin-left:240px;
+	height: 1500px;
+	width: 1000px;
+	line-height: 50px;
+	clear: both;
+	padding-top: 20px;
+	font-family: 궁서;
+}
+
+/*극장이미지와 원칙*/
+
+#info_rule div{
+	display: inline-block;
+}
+
+.img{
+	width: 400px;
+	height: 200px;
+	margin-left: 20px;
+}
+/*상영원칙*/
+#rule {
+	float:right;	
+	line-height: 30px;
+	margin-right:7px;
+	color: red;
+	height: 420px;
+}
+#rule p {
+	font-weight: 600;
+	font-size: 25px;
+	color: #EDEEE9;
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+	margin-left:10px;
+	list-style-type: red;
+}	
+
+/*극장 소개*/
+#info_theater{
+	margin-top:50px;
+	padding-left: 50px;
+	line-height: 20px;
+}
+
+#strong{
+	color: red;
+	font-size: large;
+}
+
+/*좌석, 가격 안내*/ 
+
+#seat {
+	margin-left: 10px;
+	margin-top:80px;
+	
+}
+#seat div{
+	display: inline-block;
+	line-height:30px;
+}
+#seat_img{
+	height:300px;
+	width: 400px;
+	margin-left: 20px;
+	padding-top:20px;
+}
+ h3{
+	font-weight: 600;
+	font-size: 25px;
+	color: #EDEEE9;
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+	margin-left:10px;
+	list-style-type: red;
+}
+
+#seat_1{
+	float:right;
+	margin-top: 60px;
+	margin-right: 120px;
+}
+
+/*지도/교통편*/
+
+#map{
+	margin-top: 50px;
+}
+#map div{
+	display: inline-block;
+}
+#th_map{
+	height: 300px;
+	width: 400px;
+	margin-left: 27px;
+	padding-top: 20px;
+	
+	
+}
+#map_road{
+	float: right;
+	margin-top: 50px;
+	margin-right: 80px;
+	line-height: 50px;
+}
+
+.effect {
+	background: url("image/핏방울.jpg") no-repeat;
+	background-size: 70px 40px;
+}

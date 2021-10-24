@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>horror box.introduction</title>
+	<link href = "maincss.css" type = "text/css" rel= "stylesheet">
+	<link href = "introcss.css" type = "text/css" rel= "stylesheet">
+	<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+	<!-- 가상클래스 적용-->
+	<style>
+		a:link{color:white; text-decoration: none;}
+		a:visited{color:white; text-decoration:none;}
+		a:hover{color: red;}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- <img src = "logo.jpg" id = "logo_top" alt = "horror box" width = "200" height = "180">-->
+		<a href = "main.html" id = "title">Horror Box</a>
+		
+		
+		<div id = "login">
+			<form action = "로그인 서버 삽입" method = "POST">
+				ID <input type = "email"/>
+				PW <input type = "password"/>
+				<input class = "button" type = "submit" value = "로그인">
+				<input class = "button" type = "reset" value = "초기화"><br>
+			</form>
+		</div>
+		
+		<div id = "findsign">
+			<a  href = "비밀번호 분실 이동"> ID/비밀번호 찾기</a><br>
+			<a  href = "signup.html">회원가입</a>
+		</div>
+		
+		<div id = "sns">
+			<a href= "facebook"><i class="fab fa-facebook"></i></a>
+			<a href= "instagram"><i class="fab fa-instagram"></i></a>
+			<a href= "twitter"><i class="fab fa-twitter-square"></i></a>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a class = "manulink" href = "introduction.html">극장 소개</a></li>
+			<li><a class = "manulink" href = "movie_pre.html">영화 소개</a></li>
+			<li><a class = "manulink" href = "time.html">상영 일정</a></li>
+			<li><a class = "manulink" href = "reserve.html">영화 예매</a></li>
+			<li><a class = "manulink" href = "review.html">영화 리뷰</a></li>
+		</ul>
+	</nav>
+	<div class = "home_icon">
+	<i class="fas fa-home"></i>  > 극장 소개
+	</div>
+	<article>
+		<section id = "info_rule">
+		
+			<div id = "all_img">
+				<img class = "img" src = "image\극장이미지1.jpg" alt = "극장이미지1"><br>
+				<img class = "img" src = "image\극장이미지2.jpg" alt = "극장이미지2">
+			</div>
+			<div id = "rule">
+				<p class ="effect">상영 원칙</p>
+				<ol>  			<!--상영원칙 기술-->
+					<li>무서운 장면이 나오면 1초동안만 소리질러주세요<br>(그 이상은 안됩니다!)</li>
+					<li>영화 상영 도중 음식물을 앞사람에게 쏟지 않게 조심하세요<br>(앞 사람이 음식비를 맞을 수 있어요ㅠㅠ)</li>
+					<li>19세 이상 영화의 경우 부모님 동반 시에도 청소년의 출입은 불가합니다</li>
+					<li>영화가 끝난 후 뒷정리는 깨끗하게 해주세요</li>
+					<li>영화 시작 5분 전에는 모두 자리에 앉아주세요<br>(늦지 말아주세요:)</li>
+					<li>공공장소에서의 스킨십은 자제해주세요<br>(너무 무서워도 안됩니다!)</li>
+				</ol>
+			</div>
+		</section>
+		<section id = "info_theater"> <!-- 극장소개-->
+			
+			<p>우리 horror box는 오직! '공포 영화'만을 상영하는 이색 테마 영화관입니다.<br>
+			  2021년 5월 새롭게 개관한 horror box는 여러분께 어디서도 느껴본 적 없는 짜릿한 공포를 선물해드립니다.<br></p>
+			<p id = "strong">공포 영화를 사랑하는 분! 무서운 영화를 더 무섭게 보고 싶은 분! 새로운 공포 영화를 찾고 계신 분!</p>
+			<p>모두 지금 당장 horror box로 놀러오세요!</p>
+		</section>
+		
+		<section id = "seat">   
+							<!--좌석, 가격-->
+			<div>
+				<img src = "image/좌석이미지.jpg" id = "seat_img" alt = "극장 좌석 이미지 ">
+			</div>
+			
+		<div id = "seat_1">
+			<div>
+				<h3 class = "effect">가격 안내</h3>
+				<ul>
+					<li>성인 : 8000</li>
+					<li>청소년 : 6000</li>
+				</ul>
+			</div>
+			<div id = "seat_2">
+				<h3 class = "effect">대관 안내/문의</h3>
+				<ul>
+					<li>Tel: 031-123-4567</li>
+					<li>Email: tpdls80@naver.com</li>
+				</ul>
+			</div>
+		</div>
+		</section>
+			
+		
+		<section id = "map">		<!-- 극장 교통편 -->
+			<div>
+				<img id = "th_map" src = "image/극장위치.jpg" alt = "극장 지도">
+			</div>
+			<div id = "map_road">
+				<h3 class = "effect">교통편</h3>
+				<ul>
+					<li>도보: 양평 버스터미널에서 걸어서 9분 (양평 우체국 방면)</li>						
+					<li>버스: 양평터미널(2-3,1-3,2-5) > 양평병원 정류장 하차 <br>> horror box까지 걷기</li>
+				</ul>
+			</div>	
+	
+		</section>
+	</article>
+	
+</body>
+<footer>
+		
+	<div id = "footer_box">	
+		<div id="theater">
+			<ul>	
+				<li>경기도 양평군 공포면 호러마을 2로 25</li>
+				<li>Tel: 031-123-4567</li>
+			</ul>
+		
+		</div>
+	
+		<div id = "rep">
+			<ul>
+				<li>대표자명: 신세인</li>
+				<li>email: tpdls80@naver.com</li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<div id= "copy">
+		<p>Copyright @ 2021 horrorbox by seinshin. All Rights Reserved.</p>
+	</div>
+</footer>
+</html>
+
+</html>

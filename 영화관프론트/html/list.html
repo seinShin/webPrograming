@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>horror box.list</title>
+	<link href = "maincss.css" type = "text/css" rel= "stylesheet">
+	<link href = "movie_pre_css.css" type = "text/css" rel= "stylesheet">
+</head> 
+<body>
+	<h3>상세 예매 내역 확인 </h3>
+	<p  id = "output">
+	
+		<form>
+			<input class = "button3"id = "button_4" onclick = "deleteItem();"; value="예매삭제">
+		</form>
+	</p>
+</body>
+<script type = "text/javascript">
+
+    //예매 페이지에서 클릭한 상세내역 key 값을 전달받는 함수
+	function searchkey(data){
+	
+		return new URLSearchParams(location.search).get(data);
+	};
+	
+	//해당 상세 내역을 출력하는 부분
+	var index =0;
+	var ls = window.localStorage;
+	var key = searchkey("data");
+	var i;
+	console.log(key);
+	output.innerHTML = "";	
+	var print = JSON.parse(ls.getItem(ls.key(0)));
+	for (i =0; i < print.length; i++){
+		if (key == i){		
+			var result = print[i];
+			for (i in result){
+				output.innerHTML += i + ":" + result[i] + "<br>";
+			}
+		}
+	}
+	
+	//상세 예매 내역에서 예매 삭제버튼을 누르면 해당 내역이 로컬 스토리지에서 삭제
+	function deleteItem() {	
+			ls.clear();
+			
+			
+			if (print.length !=0) {
+				for (var i =0; i<print.length; i++){
+					if (key == i){
+						print.splice(i,1);
+				}
+			}
+			}
+			
+			ls.setItem("상세 예매 내역",JSON.stringify(print));
+			location.reload();
+		
+		}
+</script>
+</html>

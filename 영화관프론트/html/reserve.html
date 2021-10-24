@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>horror box.reserve</title>
+	<link href = "maincss.css" type = "text/css" rel= "stylesheet">
+	<link href = "movie_pre_css.css" type = "text/css" rel= "stylesheet">
+	<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+	<!-- 가상클래스 적용-->
+	<style>
+		a:link{color:white; text-decoration: none;}
+		a:visited{color:white; text-decoration:none;}
+		a:hover{color: red;}
+		.check {background-color : red;}
+		.active {color : red;}
+		
+		.show { color : red;}
+	</style>
+</head> 
+<body>
+	<header>
+		<!-- <img src = "logo.jpg" id = "logo_top" alt = "horror box" width = "200" height = "180">-->
+		<a href = "main.html" id = "title">Horror Box</a>
+		
+		
+		<div id = "login">
+			<form action = "로그인 서버 삽입" method = "POST">
+				ID <input type = "email"/>
+				PW <input type = "password"/>
+				<input class = "button" type = "submit" value = "로그인">
+				<input class = "button" type = "reset" value = "초기화"><br>
+			</form>
+		</div>
+		
+		<div id = "findsign">
+			<a  href = "비밀번호 분실 이동"> ID/비밀번호 찾기</a><br>
+			<a  href = "signup.html">회원가입</a>
+		</div>
+		
+		<div id = "sns">
+			<a href= "facebook"><i class="fab fa-facebook"></i></a>
+			<a href= "instagram"><i class="fab fa-instagram"></i></a>
+			<a href= "twitter"><i class="fab fa-twitter-square"></i></a>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a class = "manulink" href = "introduction.html">극장 소개</a></li>
+			<li><a class = "manulink" href = "movie_pre.html">영화 소개</a></li>
+			<li><a class = "manulink" href = "time.html">상영 일정</a></li>
+			<li><a class = "manulink" href = "reserve.html">영화 예매</a></li>
+			<li><a class = "manulink" href = "review.html">영화 리뷰</a></li>
+		</ul>
+	</nav>
+	<div class = "home_icon">
+	<i class="fas fa-home"></i>  > 영화 예매
+	</div>
+<body>
+	<article id = "reservation">
+		<h2>영화 예매</h2><br>
+		<p id = "re_alam">*영화를 선택한 후 시간, 좌석을 선택해주세요</p>
+		<form action = "예매" method = "POST">
+			<div id = "step1">
+			<h3 >step 1</h3>
+			<ul>
+				<li data-date = "1" id = "반교:디텐션" class = "mname">반교:디텐션</li>
+				<li data-date = "2" id = "곤지암" class = "mname">곤지암</li>
+				<li data-date = "3" id = "변신" class = "mname">변신</li>
+				<li data-date = "4" id = "오펀:천사의 비밀" class = "mname">오펀:천사의 비밀</li>
+			</ul>
+			</div>
+		
+
+		
+			<div id = "step2">
+			<h3 id = "s2">step 2</h3>
+				<div id = "step2box">
+					<p class = "date" id = "date-1">5월 5일: 20:00~21:43</p>
+					<p class = "date" id = "date-2">5월 15일: 22:00~23:34</p>
+					<p class = "date" id = "date-3">5월 19일: 20:00~21:53</p>
+					<p class = "date" id = "date-4">5월 29일: 22:00~24:03</p>
+				</div>
+			</div>
+		
+			<div id = "step3">
+				<h3>step 3</h3>
+				<!--좌석 선택 테이블 만들기-->
+				성인 : 
+				<input type = "radio" name = "adult" value = "0" checked = " checked"/>0명
+				<input type = "radio" name = "adult" value = "1" />1명
+				<input type = "radio" name = "adult" value = "2" />2명
+				<input type = "radio" name = "adult" value = "3" />3명
+				<br>
+				청소년 :
+				<input type = "radio" name = "std" value = "0" checked = " checked"/>0명
+				<input type = "radio" name = "std" value = "1"/>1명
+				<input type = "radio" name = "std" value = "2" />2명
+				<input type = "radio" name = "std" value = "3" />3명
+				
+				<br>
+				<div id = "step3box">
+					<p id = "screen">screen</p>
+					<input type = "button" name = "seats" class = "seat" value = "A1"/
+					><input type = "button" name = "seats" class = "seat" value = "A2"/>
+					
+					<input type = "button" name = "seats" class = "seat" value = "A3"/
+					><input type = "button" name = "seats" class = "seat" value = "A4"/
+					><input type = "button" name = "seats" class = "seat" value = "A5"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "A6"/
+					><input type = "button" name = "seats" class = "seat" value = "A7"/>
+				
+					<br>
+				
+					<input type = "button" name = "seats" class = "seat" value = "B1"/
+					><input type = "button" name = "seats" class = "seat" value = "B2"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "B3"/
+					><input type = "button" name = "seats" class = "seat" value = "B4"/
+					><input type = "button" name = "seats" class = "seat" value = "B5"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "B6"/
+					><input type = "button" name = "seats" class = "seat" value = "B7"/>
+				
+					<br>
+					
+					<input type = "button" name = "seats" class = "seat" value = "C1"/
+					><input type = "button" name = "seats" class = "seat" value = "C2"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "C3"/
+					><input type = "button" name = "seats" class = "seat" value = "C4"/
+					><input type = "button" name = "seats" class = "seat" value = "C5"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "C6"/
+					><input type = "button" name = "seats" class = "seat" value = "C7"/>
+					
+					<br>
+					
+					
+					<input type = "button" name = "seats" class = "seat" value = "D1"/
+					><input type = "button" name = "seats" class = "seat" value = "D2"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "D3"/
+					><input type = "button" name = "seats" class = "seat" value = "D4"/
+					><input type = "button" name = "seats" class = "seat" value = "D5"/>
+				
+					<input type = "button" name = "seats" class = "seat" value = "D6"/
+					><input type = "button" name = "seats" class = "seat" value = "D7"/>
+				
+				
+				</div>
+			</div>
+			<br>
+			<div id = "b">
+				<input class = "button3" id = "button_1" onclick = "Money(); storage(); Reset();"  value="예매하기">
+				<input class = "button3"id = "button_2" type = "reset" onclick = "Reset()"; value="취소">
+			</div>
+				
+				
+			
+		<br>
+		<br>
+		<h2>예매내역</h2>
+		<p id ="prt">
+			
+		</p>
+		<input class = "button3"id = "button_3" onclick = "pageload();" value="예매확인">
+		</form>
+		
+		
+	</article>
+	
+	<script type = "text/javascript">
+		//영화 제목과 날짜를 선택하기 위한 변수들과 toggle
+		var mname = document.querySelectorAll('.mname');
+		var c = document.getElementsByClassName('.mname').style;
+		mname.forEach((btn) => {btn.addEventListener('click', toggleButton)})
+		var click = 0; // 영화 선택 개수 
+		
+		//인원 수를 저장하는 변수 
+		var noadult = document.getElementsByName("adult");
+		var nostd = document.getElementsByName("std");
+		noadult.forEach((btn) => {btn.addEventListener('click', personCount)})
+		nostd.forEach((btn) => {btn.addEventListener('click', personCount)})	
+		
+		//좌석 수 선택 변수들
+		var Seats = document.querySelectorAll(".seat");
+		Seats.forEach((btn) => {btn.addEventListener('click', sncount)})
+		Seats.forEach((btn) => {btn.addEventListener('click', buttonseat)})
+
+		var Seatcount = 0;
+		//로컬 스토리지
+		var ls = window.localStorage;
+	
+		
+		//선택 좌석 클래스 부여
+		function buttonseat() {
+			
+			this.classList.toggle('check');
+			
+		}
+		//선택 좌석 value 반환	
+		function checkbutton() {
+			var Sarray = [];
+			var check = document.querySelectorAll(".check");
+			for (var i=0; i <check.length; i++){
+			
+					var v = check[i].value;
+					Sarray.push(v);
+				
+			}
+			return Sarray;
+		}
+		
+		
+		//영화 제목 및 날짜 선택 함수
+		function toggleButton() {
+			//영화 여러개 선택 불가, 1개만 선택 가능하도록 함
+			if (click <1){
+				this.classList.toggle('active')
+				document.getElementById('date-' + this.dataset.date).classList.toggle('show')
+			}
+			click++;
+			var moviearray = [];
+			var active = document.querySelectorAll(".active");
+			var show = document.querySelectorAll(".show");
+			moviearray.push(active[0].id);
+			moviearray.push(show[0].id);
+			return moviearray;
+		}
+		
+		
+		
+		//새로고침
+		function Reset() {
+		
+			location.reload();
+		}	
+		
+		//로컬 스토리지 저장 함수
+		function storage() {
+			
+			var movie = toggleButton();
+			var output =new Array();
+			var date;
+			if(movie[1] =="date-1")
+				 date = "5월 5일 (20:00~21:43)";		
+			else if(movie[1] == "date-2")
+				date =  "5월 15일 (22:00~23:34)";
+			else if (movie[1] == "date-3")
+				date = "5월 19일 (20:00~21:53)";
+			else
+				date = "5월 29일 (22:00~24:03)";
+				
+				
+				
+			local = {영화: movie[0],일시: date,성인:adult(),청소년:std(),총인원:personCount(), 좌석번호:checkbutton(), 금액:Money()};
+			
+			if(ls.getItem("상세 예매 내역") !== null){
+				var result = JSON.parse(ls.getItem("상세 예매 내역"));
+				result.push(local);
+				ls.setItem("상세 예매 내역",JSON.stringify(result));
+				
+			}
+			else{
+				output.push(local);
+				ls.setItem("상세 예매 내역",JSON.stringify(output));
+			}
+			
+			confirm("총 결제 금액은 " + Money() +"원 입니다. 결제 하시겠습니까?");
+			
+		}
+		
+		//저장된 로컬 스토리지 내역 검색, 출력 함수
+		function pageload() {
+			prt.innerHTML = "";
+			var index = 1;
+			var key = JSON.parse(ls.getItem(ls.key(0)));
+			
+				for (var i = 0; i < key.length; i++){
+					
+					var data = key[i];
+					prt.innerHTML +="<a href = 'list.html?data="+i+"'target = '_blank'>" +index + " : " + data.영화 + "</a>"+"<br>";
+					console.log(prt.innerHTML);
+					index++;
+				}
+			}
+		
+		
+		
+				
+		//성인 인원 수 반환
+		function adult() {
+			var alength = noadult.length;
+			var a =0;
+			
+			for (var i =0; i <alength; i++){
+				if(noadult[i].checked == true){
+				 	a =Number(noadult[i].value);
+				
+				}
+			}
+			
+			return a;
+		}
+			
+		//학생 인원 수 반환 
+		function std() {
+			var slength = nostd.length;
+			var b =0;
+			
+			for (var i=0; i <slength; i++){
+				if(nostd[i].checked == true){
+					b = Number(nostd[i].value);
+				
+				}
+			}
+			return b;
+		}
+			
+			
+		//총 인원 수 반환 
+		function personCount() {
+			var add =0;
+			
+			add = adult() + std();
+			
+			if (add >3){
+				alert('최대 선택 인원은 3명입니다.');
+			}
+			
+			return add;
+		}
+		
+		
+		//돈계산
+		function Money() {
+			money = (adult() * 8000) + (std() * 6000);
+			return money;
+		
+		}
+		
+		
+		
+		
+		//선택한 인원 수에 따라 좌석 수를 지정하는 코드
+		//인원수와 좌석수가 일치하지 않으면 경고창과 함께 버튼 값이 전달되지 않는다.
+		//경고창에는 인원 수에 따른 선택 좌석 수를 표시한다.
+		function sncount() {
+			var totalperson = personCount();
+		    Seatcount++;
+			var i =0;
+			if (totalperson <= 3){
+				if (totalperson == 3) {
+					if (Seatcount > 3) {
+						alert ('선택하신 인원 수 만큼 좌석을 선택해 주세요(선택 좌석 수: 3)');
+						Seats.disabled = 'disabled';
+					}
+				}
+				else if ( totalperson ==2) {
+					if (Seatcount >2) {
+						alert ('선택하신 인원 수 만큼 좌석을 선택해 주세요(선택 좌석 수: 2)');
+						Seats.disabled = 'disabled';
+					}
+				}
+				else if (totalperson ==0){
+					if (Seatcount >0){
+						alert ('인원을 선택해 주세요.(선택 좌석 수: 0)');
+						Seats.disabled = 'disabled';
+					}
+				}
+				
+				else {
+					if (Seatcount >1){
+						alert ('선택하신 인원 수 만큼 좌석을 선택해 주세요(선택 좌석 수: 1)');
+						Seats.disabled = 'disabled';
+					}
+				}	
+			}
+		}
+		
+	</script>
+</body>
+<footer>
+		
+	<div id = "footer_box">	
+		<div id="theater">
+			<ul>	
+				<li>경기도 양평군 공포면 호러마을 2로 25</li>
+				<li>Tel: 031-123-4567</li>
+			</ul>
+		
+		</div>
+	
+		<div id = "rep">
+			<ul>
+				<li>대표자명: 신세인</li>
+				<li>email: tpdls80@naver.com</li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<div id= "copy">
+		<p>Copyright @ 2021 horrorbox by seinshin. All Rights Reserved.</p>
+	</div>
+</footer>
+</html>

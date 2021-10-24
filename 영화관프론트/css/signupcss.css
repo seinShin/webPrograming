@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+
+#title1{
+	margin-left:500px;
+	overflow:hidden;
+	width: 50vw;
+	font-family: 궁서;
+	font-weight:500;
+	font-size: large;
+	color: #EDEEE9;
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+
+}
+
+
+
+#signup{
+	margin-left:500px;
+	height: 350px;
+	width: 450px;
+	border: 1px solid white;
+	text-align: center;
+	line-height: 50px;
+	clear: both;
+	padding-top: 20px;
+}
+
+#alam{
+	color: red;
+	margin-top:-20px;
+	font-size:small;
+	margin-bottom:-15px;
+}
+
+
+
+/*공통 속성 버튼*/
+
+.button1{
+	border:1px solid white;
+	background-color:black;
+	border-radius: 5px;
+	color: white;
+	margin-top: 10px;
+	margin-left: 15px;
+	padding: 5px;
+	font-family: '궁서';
+	font-size: 14px;
+}
+
+.button1:hover{
+	color: red;
+	background: url(image/핏방울.jpg) repeat-x;
+	background-size: 33px 30px;
+}
+
+/*버튼 위치*/
+
+#sign_button{
+	margin-left: 640px;
+	margin-top: 7px;
+}
+
+article{
+	font-family:궁서;
+}

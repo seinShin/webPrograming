@@ -1,0 +1,322 @@
+
+
+aside, article{
+	font-family: 궁서;
+}
+	
+/*aside*/
+aside{
+	line-height:25px;
+	margin-left:130px;
+	margin-top: 60px;
+	
+}	
+hr {
+	margin-left:0px;
+	width: 85px;
+}
+
+
+
+/*article*/
+
+article{
+	border : 1px solid white;
+	margin-left:290px;
+	height: 850px;
+	width: 900px;
+	line-height: 50px;
+	clear: both;
+	padding-top: 20px;
+	margin-top: -100px;
+}
+article div {
+	display: inline-block;
+	margin-left: 130px;
+	padding-top: 20px;
+	line-height: 40px;
+}
+
+
+	
+
+.button1{
+	padding: 6px;
+	margin-left:23px;
+	border:2px solid grey;
+	border-radius: 5px;
+	background-color:black;
+	color: white;
+}
+
+.button1:hover, .button2:hover, .button3:hover{
+	background: url(image/핏방울.jpg) repeat-x;
+	background-size: 33px 30px;
+	color:white;
+}
+
+.button2{
+	padding: 6px;
+	margin-left:70px;
+	border:2px solid grey;
+	border-radius: 5px;
+}
+
+
+img{
+	border: 1px solid grey;
+	height: 300px;
+	width: 230px;
+}
+#age{
+	border: none;
+	height: 20px;
+	width: 20px;	
+}
+
+
+.bottom{
+	padding-top:80px;
+		
+}
+
+/*영화 정보*/
+#intro{
+	float:center;
+	margin-left:130px;	
+}
+
+#intro ul li{
+	list-style-type:square;
+	line-height: 34px;
+	
+}
+
+h3{
+	font-weight: 600;
+	font-size: 25px;
+	color: #EDEEE9;
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+	margin-left:10px;
+	list-style-type: red;
+	
+}
+
+.info1{
+	background: url(image/핏방울.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+
+/*영화 줄거리*/
+#story{
+	margin-left: 70px;
+	margin-top: -30px;
+	color: grey;
+	line-height: 40px;
+}
+
+/*영화 예고편*/
+#frame{
+	border: 1px solid grey;
+	margin-top:5px;
+	margin-left: 70px;
+	width: 500px;
+	height:250px;
+}
+
+
+/*timetable*/
+
+.art{
+	margin-top: 30px;
+	margin-left: 290px;
+	border :none;
+
+}
+
+
+
+#table_name{
+	margin-top: 0px;
+	margin-left: 260px;
+	background: url("image/핏방울.jpg") no-repeat;
+	background-size: 70px 60px;
+	
+}
+
+#table{
+	width: 750px;
+	height: 500px;
+	margin-left: -40px;
+}
+
+
+
+
+/*리뷰등록페이지*/
+
+.button3{
+	padding: 5px;
+	margin-left:8px;
+	font-family: 궁서;
+	border:2px solid grey;
+	border-radius: 5px;
+	background-color:black;
+	color: white;
+}
+
+#review_info{
+	line-height: 30px;
+	margin-left: 120px;
+	margin-top: -40px;
+	margin-bottom: 50px;
+}
+
+select{
+	margin-left: 130px;
+	background-color: black;
+	color:white;
+	border: 1px solid white;
+}
+
+textarea{
+	margin-left: 130px;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+}
+
+/*예매 페이지*/
+
+#reservation{
+	border: none;
+	margin-top: 90px;
+	margin-left: 100px;
+	width: 1250px;
+	height: 600px;
+}
+
+#step1 ul{
+	border: 1px solid grey;
+	border-radius:10px;
+	
+} 
+
+#step1 ul li{
+line-height: 30px;
+padding: 10px;
+list-style-type:square;
+}
+
+
+#re_box{
+	display: inline-block;
+}
+
+
+
+h2{
+	font-weight: 600;
+	color: #EDEEE9;
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+	margin-left:130px;
+	margin-top: -80px;
+	margin-bottom: -80px;
+	background: url("image/핏방울.jpg") no-repeat;
+	background-size: 70px 60px;
+}
+
+#re_alam{
+	color : red;
+	margin-left: 130px;
+	margin-top: 30px;
+	margin-bottom:-80px;
+}
+
+#step2box{
+	border: 1px solid grey;
+	border-radius:10px;
+	width :200px;
+	height : 250px;
+	margin-left: 10px;
+	padding-top: 0px;
+	text-align: center;
+}
+#s2{
+	position: relative;
+	top: px;
+}
+
+
+
+#screen{
+	width: 150px;
+	height: 40px;
+	border: 1px solid grey;
+	text-align: center;
+}
+
+#step3{
+	margin-left: 130px;
+	
+
+}
+
+#step3box{
+	border: 1px solid grey;
+	border-radius:10px;
+	margin-left: 0px;
+	padding: 10px;
+}
+
+#screen {
+	 margin-left: 45px;
+	 background-color: grey;
+}
+
+#b {
+	margin-top : -20px;
+	margin-left: 855px;
+
+}
+
+#button_1 {
+	text-align: center;
+	width: 60px;
+}
+
+
+/*예매 내역*/
+#prt {
+	border: 1px solid grey;
+	border-radius: 10px;
+	width: 300px;
+	height: 100px;
+	margin-left: 125px;
+	margin-top: 80px;
+	font-size : middle;
+	line-height: 20px;
+}
+
+
+#button_3, #button_4{
+	text-align: center;
+	
+}
+
+#button_3{
+	margin-left: 127px;
+	margin-bottom: 30px;
+	
+	
+}
+
+/*상세 예매 내역*/
+#output{
+	border: 1px solid grey;
+	border-radius : 10px;
+	width: 600px;
+	height: 200px;
+
+}

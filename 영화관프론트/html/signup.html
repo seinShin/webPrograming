@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>horror box.signup</title>
+	<link href = "maincss.css" type = "text/css" rel= "stylesheet">
+	<link rel="stylesheet" href= "https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link href = "signupcss.css" type = "text/css" rel= "stylesheet">
+	<!-- 가상클래스 적용-->
+	<style>
+		a:link{color:white; text-decoration: none;}
+		a:visited{color:white; text-decoration:none;}
+		a:hover{color: red;}
+	</style>
+</head>
+<body>
+	<header>
+		
+		<a href = "main.html" id = "title">Horror Box</a>
+		
+		
+		<div id = "login">
+			<form action = "로그인 서버 삽입" method = "POST">
+				ID <input type = "email"/>
+				PW <input type = "password"/>
+				<input class = "button" type = "submit" value = "로그인">
+				<input class = "button" type = "reset" value = "초기화"><br>
+			</form>
+		</div>
+		
+		<div id = "findsign">
+			<a  href = "비밀번호 분실 이동"> ID/비밀번호 찾기</a><br>
+			<a  href = "signup.html" >회원가입</a>
+		</div>
+		
+		<div id = "sns">
+			<a href= "facebook"><i class="fab fa-facebook"></i></a>
+			<a href= "instagram"><i class="fab fa-instagram"></i></a>
+			<a href= "twitter"><i class="fab fa-twitter-square"></i></a>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a class = "manulink" href = "introduction.html">극장 소개</a></li>
+			<li><a class = "manulink" href = "movie_pre.html">영화 소개</a></li>
+			<li><a class = "manulink" href = "time.html">상영 일정</a></li>
+			<li><a class = "manulink" href = "reserve.html">영화 예매</a></li>
+			<li><a class = "manulink" href = "review.html">영화 리뷰</a></li>
+		</ul>
+	</nav>
+	<div class = "home_icon">
+	<i class="fas fa-home"></i>  > 회원가입
+	</div>
+<body>
+	<article>
+	<p id="title1">회원가입</p><!--호러박스 이미지 넣을 수도-->
+		<form method="get" action="form_app.js">
+		<div id = "signup">
+		
+			<label for = "email">Email : </label>  <!--이메일 입력창-->
+			<input type = "email" id = "email"/>
+			<br>
+		
+			<label for = "name">이름 : </label>  <!--이름 입력창-->
+			<input type = "text" id = "name"/>
+			<br>
+		
+			<label for = "pw">Password : </label>  <!--비밀번호 입력창-->
+			<input type = "password" id = "pw" />
+			<span class "error_next_box"></span>   <!--평식에 맞지 않을 경우 에러-->
+			<p id = "alam">*영문,숫자를 혼합하여 8~12자리</p>
+		
+		
+			<label for = "pwd">Password 확인 : </label>   <!--비밀번호 확인-->
+			<input type = "password" id = "pwd"/>
+			<br>
+		
+			<label for = "phone">전화번호 : </label>   <!--비밀번호 확인-->
+			<input type = "tel" id = "phone" pattern ="(01[0-9]{1})-[0-9]{3,4}-[0-9]{4}"/>
+			<br>                                            <!--이용약관, 개인정보 동의란-->
+			이용약관 및 개인정보 이용 :
+			<label for = "y"> 동의</label>
+			<input type = "radio" name = "agree" id = "y" value = "yes" checked/>
+		
+			<label for = "n">비동의</label>
+			<input type = "radio" name = "agree" id = "n" value = "no"/>
+		</div>
+		<div id = "sign_button">												 <!--등록-->
+			<button class = "button1" type = "submit">회원가입</button>
+			<button class = "button1" type = "reset">취소</button>
+		</div>
+		</form>
+	</article>
+</body>
+<footer>
+		
+	<div id = "footer_box">	
+		<div id="theater">
+			<ul>	
+				<li>경기도 양평군 공포면 호러마을 2로 25</li>
+				<li>Tel: 031-123-4567</li>
+			</ul>
+		
+		</div>
+	
+		<div id = "rep">
+			<ul>
+				<li>대표자명: 신세인</li>
+				<li>email: tpdls80@naver.com</li>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<div id= "copy">
+		<p>Copyright @ 2021 horrorbox by seinshin. All Rights Reserved.</p>
+	</div>
+</footer>
+</html>
+</html>

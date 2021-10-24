@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+html{
+	width: 1525px;
+	height: 1000px;
+}
+
+body{
+	background:black;
+	color:white;
+	font-family: 'Georgia';
+	
+	
+}
+
+header{
+	height:100px;
+	background: url(image/배경.jpg);
+	
+}
+
+
+#title {
+	margin-left: 20px;
+	overflow:hidden;
+	width: 50vw;
+	font-weight: 600;
+	line-height: -15px;
+	font-size: 70px;
+	text-align: center;
+	font-size: 3rem;
+	color: #EDEEE9;
+	font-family: 'Georgia';
+	text-shadow: 0px 1px #000000, 4px 4px 0px #CD0000;
+}
+
+
+
+
+
+/* sns*/
+#sns{
+	float:right;
+	font-size:20px;
+	letter-spacing:2px;
+	margin-top:80px;
+}
+
+/*nav 바*/
+
+nav{margin-top:10px; 
+margin-bottom:20px;}
+
+nav	ul{
+		background-color:#000000;
+		overflow:hidden;
+		border-top:1px solid white;
+		border-bottom:1px solid white;
+		margin-top: -7px;
+	}	
+	
+nav ul li {
+	display:inline;
+	float: left;
+	line-height:50px;
+	vertical-align:middile;
+	text-align:center;
+	word-spacing: 1px;
+	margin-left: 7em;
+	padding: 0 40px;
+}
+
+nav ul li:hover{
+	background: url(image/핏방울.jpg) no-repeat;
+	background-size: 50px 40px;
+	color:white;
+}
+
+.menulink{
+	text-decoration:none;
+	color:#FFFFFF;
+	display:block;
+	width:150px;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration: none;
+	line-height: 3em;
+}
+
+
+
+/*로그인*/
+#login{
+	clear:both;
+	position:absolute;
+	width:200;
+	height:30px;
+	float:right;
+	top:10px;
+	right:10px;
+	overflow:hidden;
+}
+#findsign{
+	clear:both;
+	position:absolute;
+	width:200;
+	height:30px;
+	float:right;
+	top:40px;
+	right:10px;
+	z-index:0px;
+}
+a {
+z-index:1;
+}
+
+/*공통 속성 버튼*/
+
+.button{
+	border:1px solid white;
+	background-color:black;
+	border-radius: 5px;
+	color: white;
+}
+
+.button:hover{
+	color: red;
+}
+
+.home_icon{
+	margin-left :9px;
+	margin-top: -7px;
+	font-family: 궁서;
+}
+/*영화 일정과 영화예고편 article */
+
+#main section{
+	display:inline;
+}
+
+#timetable{
+	margin-left:250px;
+}
+	
+/* 이벤트/공지 article */
+#sub{
+	margin-left:250px;
+	margin-top:30px;
+}
+table{
+	width: 85%;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	border-collapse:collapse;
+}
+th, td{
+	border-bottom:1px solid white;
+	padding:8px;
+	text-align:center;
+}
+	
+/* footer */
+footer{
+	width: 100%;
+	height:120px;
+	margin-top:40px;
+	background-color:black;
+	border-top: solid 0.5px white;
+	color: #666362;
+	font-weight:bold;
+	font-size:small;
+	word-spacing:1px;
+}
+#footer_box{
+	overflow:hidden;
+}
+#footer_box div{
+	float:left;
+	margin-bottom: -10px;
+	
+}
+
+#theater{
+	margin-left:420px;
+	margin-top:40px;
+}
+
+#rep{
+	margin-top:40px;
+}
+#copy{ 
+
+	margin-left:440px;
+	letter-spacing:1px;
+	padding-top:-25x;
+	
+}
+#logo_bottom{
+	float:left;
+	margin: 0 10px 30px;
+	height:120px;
+	width: 140px;
+}
+
